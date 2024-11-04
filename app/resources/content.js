@@ -65,7 +65,7 @@ const about = {
     },
     calendar: {
         display: true,
-        link: 'https://cal.com'
+        link: 'mailto:mario.segun@proton.me'
     },
     intro: {
         display: true,
