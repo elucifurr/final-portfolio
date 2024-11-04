@@ -29,7 +29,7 @@ const social = [
     {
         name: 'LinkedIn',
         icon: 'linkedin',
-        link: 'https://www.linkedin.com/mario-segundo-galindo',
+        link: 'https://www.linkedin.com/in/mario-segundo-galindo',
     },
     {
         name: 'X',
