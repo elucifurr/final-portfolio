@@ -1,0 +1,89 @@
+{
+    "person": {
+        "role": "Fullstack Engineer"
+    },
+    "newsletter": {
+        "title": "Subscribe to {firstName}'s Newsletter",
+        "description": "I occasionally write about development, emerging technologies, and share insights on the intersection of coding, creativity, and problem-solving.",
+        "button": "Sign up"
+    },
+    "home": {
+        "label": "Home",
+        "title": "{name}'s Portfolio",
+        "description": "Portfolio website showcasing my work as a {role}",
+        "headline": "Fullstack engineer",
+        "subline": "I'm Mario, a fullstack engineer working as a Freelancer. I develop efficient, scalable solutions. After hours, I work on personal projects and experiment with new technologies."
+    },
+    "about": {
+        "label": "About",
+        "title": "About me",
+        "description": "Meet {name}, {role} from {location}",
+        "intro": {
+            "title": "Introduction",
+            "description": "Mario is a Spain-based software developer with a passion for turning complex problems into clean, efficient code. His work spans full-stack applications, interactive web experiences, and the intersection of development and innovation."
+        },
+        "work": {
+            "title": "Work Experience",
+            "experiences": {
+                "Freelance": {
+                    "timeframe": "2023 - Present",
+                    "role": "Fullstack Engineer",
+                    "achievements": [
+                        "Developed and optimized the backend for the Nexus Banking platform, improving transaction speed by 25% and enhancing system reliability.",
+                        "Led the integration of Plaid and Dwolla APIs, enabling secure and seamless financial transfers for users."
+                    ]
+                }
+            }
+        },
+        "studies": {
+            "title": "Studies",
+            "institutions": {
+                "University of Cadiz": {
+                    "description": "Studied software engineering."
+                },
+                "JS Mastery": {
+                    "description": "Studied Next.js."
+                }
+            }
+        },
+        "technical": {
+            "title": "Technical skills",
+            "skills": [
+                {
+                    "title": "Next.js",
+                    "description": "Developing dynamic and performant web applications with Next.js for optimal user experiences and scalability."
+                },
+                {
+                    "title": "React",
+                    "description": "Creating responsive and interactive user interfaces with React for seamless user interactions."
+                },
+                {
+                    "title": "MongoDB",
+                    "description": "Building flexible and scalable data structures with MongoDB to support dynamic content and user interactions."
+                },
+                {
+                    "title": "Tailwind CSS",
+                    "description": "Using Tailwind CSS for designing responsive and modern UIs that provide a consistent look across devices."
+                }
+            ]
+        }
+    },
+    "blog": {
+        "label": "Blog",
+        "title": "Writing about development and tech...",
+        "description": "Read what {name} has been up to recently"
+    },
+    "work": {
+        "label": "Work",
+        "title": "My projects",
+        "description": "Dev projects by {name}"
+    },
+    "gallery": {
+        "label": "Gallery",
+        "title": "My photo gallery",
+        "description": "A photo collection by {name}"
+    },
+    "projectCard": {
+        "label": "Read Case Study"
+    }
+}
