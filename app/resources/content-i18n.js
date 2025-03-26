@@ -14,7 +14,7 @@ const createI18nContent = (t) => {
     }
 
     const newsletter = {
-        display: true,
+        display: false,
         title: <>{t("newsletter.title", {firstName: person.firstName})}</>,
         description: <>{t("newsletter.description")}</>
     }
@@ -54,7 +54,7 @@ const createI18nContent = (t) => {
 
     const about = {
         label: t("about.label"),
-        title: t("about.label"),
+        title: t("about.title"),
         description: t("about.description", {name: person.name, role: person.role, location: person.location}),
         tableOfContent: {
             display: true,
@@ -73,18 +73,18 @@ const createI18nContent = (t) => {
             description: <>{t("about.intro.description")}</>
         },
         work: {
-            display: true, // set to false to hide this section
+            display: true,
             title: t("about.work.title"),
             experiences: [
                 {
                     company: 'Freelance',
                     timeframe: t("about.work.experiences.Freelance.timeframe"),
                     role: t("about.work.experiences.Freelance.role"),
-                    achievements: t("about.work.experiences.Freelance.achievements").split(";"),
-                    images: [ // optional: leave the array empty if you don't want to display images
+                    achievements: t("about.work.experiences.Freelance.achievements").split("|"),
+                    images: [
                         {
-                            src: '/images/projects/nexus/nexus-01.jpg',
-                            alt: 'Once UI Project',
+                            src: '/images/projects/nexus/nexus-01.png',
+                            alt: 'Nexus Banking Platform',
                             width: 16,
                             height: 10
                         }
@@ -93,48 +93,90 @@ const createI18nContent = (t) => {
             ]
         },
         studies: {
-            display: true, // set to false to hide this section
-            title: 'Studies',
+            display: true,
+            title: t("about.studies.title"),
             institutions: [
                 {
-                    name: 'University of Cádiz',
-                    description: <>{t(`about.studies.institutions.University of Cáoiz.description`)}</>,
+                    name: 'University of Cadiz',
+                    description: <>{t("about.studies.institutions.UniversityOfCadiz.description")}</>,
                 },
                 {
                     name: 'JS Mastery',
-                    description: <>{t("about.studies.institutions.JS Mastery.description")}</>,
+                    description: <>{t("about.studies.institutions.JSMastery.description")}</>,
                 }
             ]
         },
         technical: {
-            display: true, // set to false to hide this section
+            display: true,
             title: t("about.technical.title"),
             skills: [
                 {
                     title: 'Next.js',
-                    description: <>{t("about.technical.skills.Nextjs.description")}</>, // "." not accepted in next-intl namespace
+                    description: <>{t("about.technical.skills.Nextjs.description")}</>,
                     images: [
                         {
-                            src: '/images/projects/project-01/cover-04.jpg',
-                            alt: 'Project image',
+                            src: '/images/projects/nexus/nexus-01.png',
+                            alt: 'Nexus Banking project image',
+                            width: 16,
+                            height: 10
+                        },
+                        {
+                            src: '/images/projects/chefs-cookbook/cover-01.png',
+                            alt: 'Chef\'s Cookbook project image',
                             width: 16,
                             height: 10
                         },
                     ]
                 },
                 {
-                    title: 'PenPot',
-                    description: <>{t("about.technical.skills.PenPot.description")}</>,
+                    title: 'React',
+                    description: <>{t("about.technical.skills.React.description")}</>,
                     images: [
                         {
-                            src: '/images/projects/project-01/cover-02.jpg',
-                            alt: 'Project image',
+                            src: '/images/projects/movieflix/movieflix-01.png',
+                            alt: 'Chef\'s Cookbook project image',
                             width: 16,
                             height: 10
                         },
                         {
-                            src: '/images/projects/project-01/cover-03.jpg',
-                            alt: 'Project image',
+                            src: '/images/projects/zafiro/zafiro-01.png',
+                            alt: 'Zafiro project image',
+                            width: 16,
+                            height: 10
+                        },
+                    ]
+                },
+                {
+                    title: 'PostgreSQL',
+                    description: <>{t("about.technical.skills.PostgreSQL.description")}</>,
+                    images: [
+                        {
+                            src: '/images/projects/nexus/nexus-01.png',
+                            alt: 'Nexus Banking project image',
+                            width: 16,
+                            height: 10
+                        },
+                    ]
+                },
+                {
+                    title: 'MongoDB',
+                    description: <>{t("about.technical.skills.MongoDB.description")}</>,
+                    images: [
+                        {
+                            src: '/images/projects/chefs-cookbook/cover-01.png',
+                            alt: 'Chef\'s Cookbook project image',
+                            width: 16,
+                            height: 10
+                        },
+                    ]
+                },
+                {
+                    title: 'Tailwind CSS',
+                    description: <>{t("about.technical.skills.TailwindCSS.description")}</>,
+                    images: [
+                        {
+                            src: '/images/projects/nexus/nexus-01.png',
+                            alt: 'Nexus Banking project image',
                             width: 16,
                             height: 10
                         },
@@ -164,80 +206,70 @@ const createI18nContent = (t) => {
         label: t("gallery.label"),
         title: t("gallery.title"),
         description: t("gallery.description", {name: person.name}),
-        // Images from https://pexels.com
         images: [
-            {
-                src: '/images/gallery/img-01.jpg',
-                alt: 'image',
-                orientation: 'vertical'
-            },
-            {
-                src: '/images/gallery/img-02.jpg',
-                alt: 'image',
+            { 
+                src: '/images/gallery/nexus-01.png', 
+                alt: 'Nexus Banking Platform - Main Dashboard',
                 orientation: 'horizontal'
             },
             { 
-                src: '/images/gallery/img-03.jpg',
-                alt: 'image',
-                orientation: 'vertical'
-            },
-            { 
-                src: '/images/gallery/img-04.jpg',
-                alt: 'image',
-                orientation: 'horizontal'
-            },
-            {
-                src: '/images/gallery/img-05.jpg',
-                alt: 'image',
-                orientation: 'horizontal'
-            },
-            {
-                src: '/images/gallery/img-06.jpg',
-                alt: 'image',
-                orientation: 'vertical'
-            },
-            {
-                src: '/images/gallery/img-07.jpg',
-                alt: 'image',
-                orientation: 'horizontal'
-            },
-            {
-                src: '/images/gallery/img-08.jpg',
-                alt: 'image',
-                orientation: 'vertical'
-            },
-            {
-                src: '/images/gallery/img-09.jpg',
-                alt: 'image',
-                orientation: 'horizontal'
-            },
-            {
-                src: '/images/gallery/img-10.jpg',
-                alt: 'image',
+                src: '/images/gallery/nexus-02.png', 
+                alt: 'Nexus Banking Platform - Transaction Interface',
                 orientation: 'horizontal'
             },
             { 
-                src: '/images/gallery/img-11.jpg',
-                alt: 'image',
-                orientation: 'vertical'
-            },
-            {
-                src: '/images/gallery/img-12.jpg',
-                alt: 'image',
-                orientation: 'horizontal'
-            },
-            {
-                src: '/images/gallery/img-13.jpg',
-                alt: 'image',
+                src: '/images/gallery/nexus-03.png', 
+                alt: 'Nexus Banking Platform - Analytics View',
                 orientation: 'horizontal'
             },
             { 
-                src: '/images/gallery/img-14.jpg',
-                alt: 'image',
+                src: '/images/gallery/nexus-04.png', 
+                alt: 'Nexus Banking Platform - User Settings',
                 orientation: 'horizontal'
             },
+            { 
+                src: '/images/gallery/movieflix-01.png', 
+                alt: 'MovieFlix - Movie Search and Discovery Platform',
+                orientation: 'horizontal'
+            },
+            { 
+                src: '/images/gallery/chefs-cookbook-01.png', 
+                alt: 'Chef\'s Cookbook - Recipe Sharing Platform',
+                orientation: 'horizontal'
+            },
+            { 
+                src: '/images/gallery/alojasur-web.png', 
+                alt: 'Alojasur - Accommodation Booking Website',
+                orientation: 'horizontal'
+            },
+            { 
+                src: '/images/gallery/conilfix-web.png', 
+                alt: 'ConilFix - Local Services Platform',
+                orientation: 'horizontal'
+            },
+            { 
+                src: '/images/gallery/rediseñoseo-web.png', 
+                alt: 'RediseñoSEO - SEO Optimization Services',
+                orientation: 'horizontal'
+            },
+            { 
+                src: '/images/gallery/restaurantesierra-web.png', 
+                alt: 'Restaurante Sierra - Restaurant Website',
+                orientation: 'horizontal'
+            },
+            { 
+                src: '/images/gallery/transportepro-web.png', 
+                alt: 'TransportePro - Transportation Services Platform',
+                orientation: 'horizontal'
+            },
+            { 
+                src: '/images/gallery/zafiro-web.png', 
+                alt: 'Zafiro - E-commerce Platform',
+                orientation: 'horizontal'
+            }
         ]
     }
+
     return {
         person,
         social,

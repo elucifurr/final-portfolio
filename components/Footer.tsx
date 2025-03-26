@@ -1,11 +1,11 @@
 import { renderContent } from "@/app/resources";
 import { Flex, IconButton, SmartLink, Text } from "@/once-ui/components"
-import { useTranslations } from "next-intl";
+import { useTranslations, useLocale } from "next-intl";
 // import { person, social } from '@/app/resources'
 
 export const Footer = () => {
     const currentYear = new Date().getFullYear();
-
+    const locale = useLocale();
     const t = useTranslations();
     const { person, social } = renderContent(t);
 
@@ -33,8 +33,14 @@ export const Footer = () => {
                         / Build your portfolio with <SmartLink style={{marginLeft: '-0.125rem'}} href="https://once-ui.com/templates/magic-portfolio">Once UI</SmartLink>
                     </Text>
                 </Text>
-                <Flex
-                    gap="16">
+                <Flex gap="16" alignItems="center">
+                    <IconButton
+                        href={`/cv_${locale}.pdf`}
+                        icon="document"
+                        tooltip="Download CV"
+                        size="s"
+                        variant="ghost"
+                    />
                     {social.map((item) => (
                         item.link && (
                             <IconButton

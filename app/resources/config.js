@@ -1,12 +1,12 @@
-const baseURL = 'mariosegundo.com'
+const baseURL = 'mariosegundo.vercel.app'
 
 // Enable localization
-const i18n = false;
+const i18n = true;
 
 // Manage localized content in the messages folder
 const i18nOptions = {
     locales: ['en', 'es'],            // A list of all locales that are supported, e.g. ['en','es']
-    defaultLocale: 'en'         // Locale used by default and as a fallback
+    defaultLocale: 'es'         // Locale used by default and as a fallback
 }
 
 const routes = {
@@ -30,8 +30,8 @@ const effects = {
 }
 
 const style = {
-    theme:       'dark',         // dark | light
-    neutral:     'gray',         // sand | gray | slate
+    theme:       'light',         // dark | light
+    neutral:     'slate',         // sand | gray | slate
     brand:       'emerald',         // blue | indigo | violet | magenta | pink | red | orange | yellow | moss | green | emerald | aqua | cyan
     accent:      'violet',       // blue | indigo | violet | magenta | pink | red | orange | yellow | moss | green | emerald | aqua | cyan
     solid:       'contrast',     // color | contrast

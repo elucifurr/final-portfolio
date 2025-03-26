@@ -28,44 +28,40 @@
                 "Freelance": {
                     "timeframe": "2023 - Present",
                     "role": "Fullstack Engineer",
-                    "achievements": [
-                        "Developed and optimized the backend for the Nexus Banking platform, improving transaction speed by 25% and enhancing system reliability.",
-                        "Led the integration of Plaid and Dwolla APIs, enabling secure and seamless financial transfers for users."
-                    ]
+                    "achievements": "Developed and optimized the backend for the Nexus Banking platform, improving transaction speed by 25% and enhancing system reliability.|Led the integration of Plaid and Dwolla APIs, enabling secure and seamless financial transfers for users."
                 }
             }
         },
         "studies": {
             "title": "Studies",
             "institutions": {
-                "University of Cadiz": {
+                "UniversityOfCadiz": {
                     "description": "Studied software engineering."
                 },
-                "JS Mastery": {
+                "JSMastery": {
                     "description": "Studied Next.js."
                 }
             }
         },
         "technical": {
             "title": "Technical skills",
-            "skills": [
-                {
-                    "title": "Next.js",
+            "skills": {
+                "Nextjs": {
                     "description": "Developing dynamic and performant web applications with Next.js for optimal user experiences and scalability."
                 },
-                {
-                    "title": "React",
+                "React": {
                     "description": "Creating responsive and interactive user interfaces with React for seamless user interactions."
                 },
-                {
-                    "title": "MongoDB",
+                "PostgreSQL": {
+                    "description": "Managing relational databases efficiently with PostgreSQL for robust data persistence and complex queries."
+                },
+                "MongoDB": {
                     "description": "Building flexible and scalable data structures with MongoDB to support dynamic content and user interactions."
                 },
-                {
-                    "title": "Tailwind CSS",
+                "TailwindCSS": {
                     "description": "Using Tailwind CSS for designing responsive and modern UIs that provide a consistent look across devices."
                 }
-            ]
+            }
         }
     },
     "blog": {

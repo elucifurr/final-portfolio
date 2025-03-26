@@ -13,7 +13,7 @@ const person = {
 }
 
 const newsletter = {
-    display: true,
+    display: false,
     title: <>Subscribe to {person.firstName}'s Newsletter</>,
     description: <>I occasionally write about development, emerging technologies, and share insights on the intersection of coding, creativity, and problem-solving.</>
 }
@@ -82,12 +82,13 @@ const about = {
                 role: 'Fullstack Engineer',
                 achievements: [
                     <>Developed and optimized the backend for the Nexus Banking platform, improving transaction speed by 25% and enhancing system reliability.</>,
-                    <>Led the integration of Plaid and Dwolla APIs, enabling secure and seamless financial transfers for users.</>
+                    <>Led the integration of Plaid and Dwolla APIs, enabling secure and seamless financial transfers for users.</>,
+                    <>Designed and deployed microservices architecture using Docker and Kubernetes for improved scalability.</>                    
                 ],
-                images: [ // optional: leave the array empty if you don't want to display images
+                images: [
                     {
                         src: '/images/projects/nexus/nexus-01.png',
-                        alt: 'Once UI Project',
+                        alt: 'Nexus Banking Platform',
                         width: 16,
                         height: 10
                     }
@@ -115,7 +116,7 @@ const about = {
         skills: [
             {
                 title: 'Next.js',
-                description: <>Developing dynamic and performant web applications with Next.js for optimal user experiences and scalability.</>,
+                description: <>Developing dynamic and performant web applications with Next.js, leveraging server-side rendering and static site generation for optimal performance and SEO.</>,
                 images: [
                     {
                         src: '/images/projects/nexus/nexus-01.png',
@@ -133,7 +134,7 @@ const about = {
             },
             {
                 title: 'React',
-                description: <>Creating responsive and interactive user interfaces with React for seamless user interactions.</>,
+                description: <>Building sophisticated user interfaces with React, implementing complex state management, custom hooks, and optimizing component performance for seamless user experiences.</>,
                 images: [
                     {
                         src: '/images/projects/movieflix/movieflix-01.png',
@@ -150,8 +151,20 @@ const about = {
                 ]
             },
             {
+                title: 'PostgreSQL',
+                description: <>Designing and optimizing robust database architectures with PostgreSQL, implementing complex queries, stored procedures, and ensuring data integrity through proper indexing and normalization.</>,
+                images: [
+                    {
+                        src: '/images/projects/nexus/nexus-01.png',
+                        alt: 'Nexus Banking project image',
+                        width: 16,
+                        height: 10
+                    },
+                ]
+            },
+            {
                 title: 'MongoDB',
-                description: <>Building flexible and scalable data structures with MongoDB to support dynamic content and user interactions.</>,
+                description: <>Experience with MongoDB for building flexible, scalable NoSQL database solutions, including implementing data models, aggregation pipelines, and integrating with Next.js applications.</>,
                 images: [
                     {
                         src: '/images/projects/chefs-cookbook/cover-01.png',
@@ -163,7 +176,7 @@ const about = {
             },
             {
                 title: 'Tailwind CSS',
-                description: <>Using Tailwind CSS for designing responsive and modern UIs that provide a consistent look across devices.</>,
+                description: <>Crafting responsive and modern user interfaces with Tailwind CSS, utilizing its utility-first approach for rapid development while maintaining consistent design systems and implementing custom design tokens.</>,
                 images: [
                     {
                         src: '/images/projects/nexus/nexus-01.png',
@@ -196,80 +209,69 @@ const work = {
 
 const gallery = {
     label: 'Gallery',
-    title: 'My photo gallery',
-    description: `A photo collection by ${person.name}`,
-    // Images from https://pexels.com
+    title: 'My project gallery',
+    description: `A showcase of ${person.name}'s development projects`,
     images: [
         { 
-            src: '/images/gallery/img-01.jpg', 
-            alt: 'image',
-            orientation: 'vertical'
-        },
-        { 
-            src: '/images/gallery/img-02.jpg', 
-            alt: 'image',
+            src: '/images/gallery/nexus-01.png', 
+            alt: 'Nexus Banking Platform - Main Dashboard',
             orientation: 'horizontal'
         },
         { 
-            src: '/images/gallery/img-03.jpg', 
-            alt: 'image',
-            orientation: 'vertical'
-        },
-        { 
-            src: '/images/gallery/img-04.jpg', 
-            alt: 'image',
+            src: '/images/gallery/nexus-02.png', 
+            alt: 'Nexus Banking Platform - Transaction Interface',
             orientation: 'horizontal'
         },
         { 
-            src: '/images/gallery/img-05.jpg', 
-            alt: 'image',
+            src: '/images/gallery/nexus-03.png', 
+            alt: 'Nexus Banking Platform - Analytics View',
             orientation: 'horizontal'
         },
         { 
-            src: '/images/gallery/img-06.jpg', 
-            alt: 'image',
-            orientation: 'vertical'
-        },
-        { 
-            src: '/images/gallery/img-07.jpg', 
-            alt: 'image',
+            src: '/images/gallery/nexus-04.png', 
+            alt: 'Nexus Banking Platform - User Settings',
             orientation: 'horizontal'
         },
         { 
-            src: '/images/gallery/img-08.jpg', 
-            alt: 'image',
-            orientation: 'vertical'
-        },
-        { 
-            src: '/images/gallery/img-09.jpg', 
-            alt: 'image',
+            src: '/images/gallery/movieflix-01.png', 
+            alt: 'MovieFlix - Movie Search and Discovery Platform',
             orientation: 'horizontal'
         },
         { 
-            src: '/images/gallery/img-10.jpg', 
-            alt: 'image',
+            src: '/images/gallery/chefs-cookbook-01.png', 
+            alt: 'Chef\'s Cookbook - Recipe Sharing Platform',
             orientation: 'horizontal'
         },
         { 
-            src: '/images/gallery/img-11.jpg', 
-            alt: 'image',
-            orientation: 'vertical'
-        },
-        { 
-            src: '/images/gallery/img-12.jpg', 
-            alt: 'image',
+            src: '/images/gallery/alojasur-web.png', 
+            alt: 'Alojasur - Accommodation Booking Website',
             orientation: 'horizontal'
         },
         { 
-            src: '/images/gallery/img-13.jpg', 
-            alt: 'image',
+            src: '/images/gallery/conilfix-web.png', 
+            alt: 'ConilFix - Local Services Platform',
             orientation: 'horizontal'
         },
         { 
-            src: '/images/gallery/img-14.jpg', 
-            alt: 'image',
+            src: '/images/gallery/rediseñoseo-web.png', 
+            alt: 'RediseñoSEO - SEO Optimization Services',
             orientation: 'horizontal'
         },
+        { 
+            src: '/images/gallery/restaurantesierra-web.png', 
+            alt: 'Restaurante Sierra - Restaurant Website',
+            orientation: 'horizontal'
+        },
+        { 
+            src: '/images/gallery/transportepro-web.png', 
+            alt: 'TransportePro - Transportation Services Platform',
+            orientation: 'horizontal'
+        },
+        { 
+            src: '/images/gallery/zafiro-web.png', 
+            alt: 'Zafiro - E-commerce Platform',
+            orientation: 'horizontal'
+        }
     ]
 }
 

@@ -197,6 +197,12 @@ export default function About(
                                             variant="tertiary"/>
                                     )
                                 ))}
+                                <Button
+                                    href={`/cv_${locale}.pdf`}
+                                    prefixIcon="document"
+                                    label="CV"
+                                    size="s"
+                                    variant="tertiary"/>
                             </Flex>
                         )}
                     </Flex>
